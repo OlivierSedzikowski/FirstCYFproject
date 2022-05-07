@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by olivier</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">CODE YOUR FUTURE Survey Form</h1>
+       <p id="description" class="description text-center">
+               Thank you for taking your time to help us improve our website
+         </p>
+    </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label"for="name">Name</label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name"
+             required
+       />
+     </div>
+     <div class="form-group">
+       <label id="email-label" for="email">Email</label>
+       <input
+             type="email"
+             name="email"
+             id="email"
+             class="form-control"
+             placeholder="Enter your Email"
+             required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number">Age<span class="clue"></label>
+          <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+           />
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your current status?</p>
+        <select id="dropdown" name="status" class="form-control" required>
+        <option disabled selected value>Select current status</option>
+          <option value="unemployed">Unemployed</option>
+          <option value="seeker">Refugee and asylum seeker</option>
+          <option value="career">Someone who wants change his or her career</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+        <div class="form-group">
+          <p>Would you recommend Code your future to a friend?</p>
+          <label>
+            <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+             />Definitely</label>
+          <label>
+            <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+             />Maybe</label>
+          <label>
+            <input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+             />Not sure</label>
+       </div>
+        <div class="form-group">
+            <p>
+              What would you like to see improved?
+            <span class="clue">(Check all that apply)</span>
+             </p>
+             <label>
+               <input
+                 name="prefer"
+                 value="the-intro-to-digital-course"
+                 type="checkbox"
+                 class="input-checkbox"
+                      />The Intro to Digital Course</label>
+              <label>
+                <input
+                  name="prefer"
+                  value="fundamentals-course"
+                  type="checkbox"
+                  class="input-checkbox"
+              />Fundamentals Course</label>
+              <label>
+                <input
+                   name="prefer"
+                   value="the-software-development-course"
+                   type="checkbox"
+                   class="input-checkbox"
+                   />The Software Development Course</label>
+                  <label>
+                 <input
+                    name="prefer"
+                    value="application-process"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Application process</label>
+                   <label>
+                  <input
+                     name="prefer"
+                     value="website"
+                     type="checkbox"
+                     class="input-checkbox"
+                         />Website</label>
+                    <label>
+                   <input
+                      name="prefer"
+                      value="additional-courses"
+                      type="checkbox"
+                      class="input-checkbox"
+                          />Additional Courses</label>
+                    <label>
+                   <input
+                       name="prefer"
+                       value="blog"
+                       type="checkbox"
+                       class="input-checkbox"
+                          />Blog</label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here...">
+          </textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
